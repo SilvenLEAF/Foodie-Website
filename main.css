@@ -56,21 +56,22 @@
      height: 20%;
      border-radius: 50%;
 
-     box-shadow: -1px 0px 1px hsl(0, 100%, 50%),
-                         -2px 0px 1px hsl(0, 100%, 20%),
-                         -3px 0px 1px hsl(0, 100%, 18%),
-                         -4px 0px 1px hsl(0, 100%, 16%),
-                         -5px 0px 1px hsl(0, 100%, 14%),
-                         -6px 0px 1px hsl(0, 100%, 12%);
+     box-shadow: -1px -1px 1px hsl(0, 100%, 50%),
+                         -2px -2px 1px hsl(0, 100%, 20%),
+                         -3px -3px 1px hsl(0, 100%, 18%),
+                         -4px -4px 1px hsl(0, 100%, 16%),
+                         -5px -5px 1px hsl(0, 100%, 14%),
+                         -6px -6px 1px hsl(0, 100%, 12%);
 
      outline: none;
      border: none;
 }
 .box button:active{
+     bottom: -17px;
      left: calc(40% - 3px);
-     box-shadow: -1px 0px 1px hsl(0, 100%, 50%),
-                         -2px 0px 1px hsl(0, 100%, 20%),
-                         -3px 0px 1px hsl(0, 100%, 18%);
+     box-shadow: -1px -1px 1px hsl(0, 100%, 50%),
+                         -2px -2px 1px hsl(0, 100%, 20%),
+                         -3px -3px 1px hsl(0, 100%, 18%);
 
 }
 
