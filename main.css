@@ -67,7 +67,6 @@
      border: none;
 }
 .box button:active{
-     bottom: -17px;
      left: calc(40% - 3px);
      box-shadow: -1px 0px 1px hsl(0, 100%, 50%),
                          -2px 0px 1px hsl(0, 100%, 20%),
