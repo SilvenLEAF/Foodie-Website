@@ -1,0 +1,53 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&family=Fugaz+One&family=Open+Sans:wght@400;600;800&family=Press+Start+2P&family=Special+Elite&display=swap");
+
+@media screen and (min-width: 300px) {
+     html{
+          font-size: calc(14px + (18 - 14)* (100vw - 300px)/ (1600 - 300));
+     }
+}
+/* ------------------------------------------------------------------- */
+
+:root{
+     --bodyBG: darkcyan;
+     --mainBG: #ddd;
+}
+
+
+/* ------------------------------------------------------------------- */
+body{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Dosis", "Open Sans", tahoma, sans-serif;
+     background: var(--bodyBG);
+}
+.container{
+     position: fixed;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     overflow: auto;
+}
+
+
+
+/* ------------------------------------------------------------
+.                       CREATING FOOTER
+-------------------------------------------------------------- */
+.main{
+     min-height: 100vh;
+     min-width: 100vw;
+     margin-bottom: -100px;
+
+     background: var(--mainBG);
+}
+.main::after, .footer{
+     content: "";
+     display: block;
+
+     height: 100px;
+}
+.footer{
+     background: purple;
+}

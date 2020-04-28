@@ -1,0 +1,89 @@
+.ham-check{
+     width: 40px;
+     height: 40px;
+     position: fixed;
+     top: 0;
+     left: 0;
+     opacity: 0;
+     z-index: 1000;
+
+     cursor: pointer;
+}
+.hamburger{
+     width: 50px;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 500;
+}
+.hamburger::before,
+.hamburger::after,
+.hamburger > div{
+     content: "";
+     display: block;
+
+     height: 5px;
+     margin: 7px;
+
+     background: #003;
+     border-radius: 10px;
+     transition: 0.4s ease;
+}
+/* -------------------------------------------------------
+.                    ANIMATION OF NAV
+--------------------------------------------------------- */
+.ham-check:checked + .hamburger::before{
+     transform: translateY(12px) rotate(-135deg); background: #fff;
+}
+.ham-check:checked + .hamburger::after{
+     transform: translateY(-12px) rotate(135deg); background: #fff;
+}
+.ham-check:checked + .hamburger > div{
+     transform: scale(0);
+}
+/* -------------------------------------------------------- */
+@media screen and (orientation: portrait) {
+     .ham-check:checked ~ .container{
+          transform: translateX(55%) scale(0.8);
+     }
+}
+@media screen and (orientation: landscape) {
+     .ham-check:checked ~ .container{
+          transform: translateX(35%) scale(0.8);
+     }
+}
+/* -------------------------------------------------------- */
+.container{
+     transition: 0.7s ease;
+}
+/* -------------------------------------------------------
+.                    DESIGNING OF NAV
+--------------------------------------------------------- */
+nav{
+     width: 65%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     bottom: 0;
+
+     display: flex;
+     align-items: center;
+     padding-left: 5%;
+}
+nav ul li{
+     list-style-type: none;
+     color: #fff;
+     font-weight: bolder;
+     font-size: 150%;
+
+     line-height: 2;
+     letter-spacing: 2px;
+     transition: 0.4s ease;
+
+     cursor: pointer;
+}
+nav ul li:hover{
+     color: #000;
+     font-size: 180%;
+}
+/* -------------------------------------------------------- */

@@ -1,0 +1,52 @@
+
+.cube-daughter div{
+     width: 100px;
+     height: 100px;
+
+     border: 2px solid #300;
+
+     position: absolute;
+}
+.cube-parent{
+     perspective: 800px;
+     position: relative;
+     top: 25%;
+     z-index: 100;
+
+     transform: scale(0.5);
+}
+
+.front{
+     background: url('images/chicken-leg.jpg') center/cover;
+     transform: translateZ(50px);
+}
+.back{
+     background: url('images/chicken-leg.jpg') center/cover;
+     transform: translateZ(-50px);
+}
+.left{
+     background: url('images/ramen.jpg') center/cover;
+     transform: translateX(50px) rotateY(90deg) ;
+}
+.right{
+     background: url('images/ramen.jpg') center/cover;
+     transform:translateX(-50px) rotateY(-90deg);
+}
+.top{
+     background: url('images/burger.jpeg') center/cover;
+     transform:translateY(-50px) rotateX(-90deg);
+}
+.bottom{
+     background: url('images/burger.jpeg') center/cover;
+     transform:translateY(50px) rotateX(90deg);
+}
+
+.cube-daughter{
+     animation: rotar 5s linear infinite;
+     transform-style: preserve-3d;
+}
+
+@keyframes rotar {
+     0%{transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg)}
+     100%{transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg)}
+}

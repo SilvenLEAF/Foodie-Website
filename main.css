@@ -1,0 +1,191 @@
+/* --------------HERO---------- */
+.hero{
+     background: url('images/banner.jpg') top/cover;
+     width: 100vw;
+     height: 30vh;
+
+     display: flex;
+     flex-flow: column;
+     align-items: center;
+     justify-content: center;
+
+     color: #fff;
+     font-weight: bolder;
+     font-family: cursive;
+     font-size: 100%;
+     text-shadow: 6px 6px 6px #000;
+}
+
+.content{
+     margin:  15vw;
+}
+
+.box{
+     margin-top: 50px;
+     width: 70vw;
+     height: 70vw;
+
+     background: #f00;
+
+     text-align: center;
+
+     border: 1px solid;
+
+     box-shadow: -12px 12px 6px rgba(0, 0, 0, 0.3);
+
+     position: relative;
+}
+.img-div{
+     width: 100%;
+     height: 60%;
+}
+/* ------------BUTTON--------- */
+.box button{
+     font-size: 150%;
+     font-weight: bolder;
+     font-family: "Dosis";
+     color: #fff;
+
+     width: 100%;
+     position: absolute;
+     bottom: -20px;
+     left: 40%;
+
+     background: -webkit-radial-gradient(center, circle, hsl(0, 100%, 50%), hsl(100, 100%, 40%));
+     width: 20%;
+     height: 20%;
+     border-radius: 50%;
+
+     box-shadow: -1px 1px 1px hsl(0, 100%, 50%),
+                         -2px 2px 1px hsl(0, 100%, 20%),
+                         -3px 3px 1px hsl(0, 100%, 18%),
+                         -4px 4px 1px hsl(0, 100%, 16%),
+                         -5px 5px 1px hsl(0, 100%, 14%),
+                         -6px 6px 1px hsl(0, 100%, 12%);
+
+     outline: none;
+     border: none;
+}
+.box button:active{
+     bottom: -17px;
+     left: calc(40% - 3px);
+     box-shadow: -1px 1px 1px hsl(0, 100%, 50%),
+                         -2px 2px 1px hsl(0, 100%, 20%),
+                         -3px 3px 1px hsl(0, 100%, 18%);
+
+}
+
+
+
+/* ------------INDEX----------- */
+.index p{
+     text-indent: 14%;
+}
+
+/* ***************************
+.                    FOOTER
+*************************** */
+footer .social{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 250%;
+     color: #fff;
+}
+footer .social div{
+     margin: 10px;
+     cursor: pointer;
+}
+footer p{
+     color: #fff;
+     margin: 0;
+     font-size: 90%;
+     background: none;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+footer .social div{
+     transition: 0.4s ease;
+     }
+footer .social div:nth-child(1):hover{
+     color: black;
+}
+footer .social div:nth-child(2):hover{
+     color: deeppink;
+}footer .social div:nth-child(3):hover{
+     color: #33f;
+}
+
+
+
+
+
+/* ***************************
+.               HEADINGS PARAS
+*************************** */
+h1{
+     text-shadow: 6px 6px 6px #000;
+}
+h2{
+     margin: 0;
+}
+h3{
+     position: absolute;
+     top: 15%;
+     font-family: sans-serif;
+     font-size: 150%;
+     text-shadow: 6px 6px 6px #000,
+                           -6px -6px 6px #000;
+}
+
+.box p{
+     margin: 0px;
+     font-weight: bold;
+     font-size: 110%;
+     color: #fff;
+     text-shadow: 3px 3px 6px #000;
+}
+.box h2{
+     display: inline-block;
+
+}
+
+.index p{
+     text-align: justify;
+}
+/* ***************************
+.           IMAGES OF DISHES
+*************************** */
+.chicken-leg{
+     background: url("images/chicken-leg.jpg") center/cover;
+}
+.ramen{
+     background: url("images/ramen.jpg") center/cover;
+}
+.burger{
+     background: url("images/burger.jpeg") center/cover;
+}
+.worm{
+     background: url("images/worm.jpg") center/cover;
+}
+.pepper{
+     background: url("images/pepper-something.jpg") center/cover;
+}
+.toast-fries{
+     background: url("images/toast-and-fries.jpg") center/cover;
+}
+.noodles{
+     background: url("images/noodles.webp") center/cover
+}
+.pasta{
+     background: url("images/pasta.jpg") center/cover;
+}
+.pizza{
+     background: url("images/pizza.webp") center/cover;
+}
+.oily{
+     background: url("images/oily-noodles.jpg" ) center/cover;
+}
