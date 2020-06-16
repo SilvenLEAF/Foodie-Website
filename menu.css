@@ -70,7 +70,8 @@ nav{
      align-items: center;
      padding-left: 5%;
 }
-nav ul li{
+nav ul li, nav ul li a {
+     text-decoration: none;
      list-style-type: none;
      color: #fff;
      font-weight: bolder;
@@ -83,7 +84,7 @@ nav ul li{
      cursor: pointer;
      user-select: none;
 }
-nav ul li:hover{
+nav ul li:hover, nav ul li a:hover{
      color: #000;
      font-size: 180%;
 }
